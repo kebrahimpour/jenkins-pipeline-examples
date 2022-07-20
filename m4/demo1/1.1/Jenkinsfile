@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'dotnet build "$WORKSPACE/workspace/m4/src/Pi.Web/Pi.Web.csproj"'
+                sh 'dotnet build "$WORKSPACE/m4/src/Pi.Web/Pi.Web.csproj"'
             }
         }
         stage('Unit Test') {
