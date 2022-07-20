@@ -17,7 +17,6 @@ pipeline {
         }
         stage('Build') {
             steps {
-                #sh 'dotnet build "$WORKSPACE/m4/src/Pi.Web/Pi.Web.csproj"'
                 echo "XXXXXXXXXXXXXXXXXX"
             }
         }
