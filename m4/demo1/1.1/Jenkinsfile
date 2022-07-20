@@ -1,5 +1,11 @@
 pipeline {
-    agent {dockerfile true }
+    agent {
+        dockerfile {
+            filename 'Dockerfile'
+            dir 'm4/demo1/1.1'
+        }
+          
+          }
     
     stages {
         stage('Verify') {
